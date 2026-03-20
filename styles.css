@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: url("Leukada-2012.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(44, 62, 80, 0.7);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+nav {
+  background: #34495e;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+  transform: scale(1.2);
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: translateY(0) scale(1.08);
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(44, 62, 80, 0.7);
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.popup-content {
+  background: rgba(255,255,255,0.9);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.popup-content button:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.slide-down {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideDown 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

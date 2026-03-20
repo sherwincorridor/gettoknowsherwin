@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get to Know Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p>Okay ra naay css sir? hehe</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const popup = document.getElementById('popup');
+  window.closePopup = function(){
+    popup.style.opacity = '0';
+    setTimeout(()=> popup.style.display='none', 300);
+  };
+})();
+</script>
+
+<header class="fade-in">
+  <h1>Get to Know Me</h1>
+  <p>Corridor, Sherwin John</p>
+</header>
+
+<nav class="slide-down">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#strengths">Strengths</a>
+  <a href="#goals">Goals</a>
+</nav>
+
+<section id="about" class="card fade-in">
+  <h2>About Me</h2>
+  <p><strong>Full Name:</strong> Sherwin John Forrosuelo Corridor</p>
+  <p><strong>Birthday:</strong> January 22, 2008</p>
+  <p><strong>Grade & Section:</strong> STEM 12 - Persistence</p>
+  <p><strong>Background:</strong> Born and raised in Cebu. Currently living in Talisay City, Cebu.</p>
+  <p><strong>Family:</strong> Third child among four siblings.</p>
+</section>
+
+<section id="hobbies" class="card fade-in delay-1">
+  <h2>Hobbies, Interests & Talents</h2>
+  <ul>
+    <li>Playing Chess</li>
+    <li>Watching Series and Movies</li>
+    <li>Playing Games</li>
+    <li>Playing Instruments</li>
+    <li>Listening to Music</li>
+  </ul>
+</section>
+
+<section id="strengths" class="card fade-in delay-2">
+  <h2>My Strengths & Values</h2>
+  <p>My strength comes from self-awareness and understanding the world around me. I believe in being a fighter—not against others, but for myself.</p>
+</section>
+
+<section id="goals" class="card fade-in delay-3">
+  <h2>My Goals</h2>
+  <p><strong>School:</strong> Learn real-world skills.</p>
+  <p><strong>Personal:</strong> Build a family and travel.</p>
+  <p><strong>Career:</strong> Stable and fulfilling job.</p>
+</section>
+
+<footer class="fade-in delay-4">
+  <p>© 2026 Sherwin John Corridor :PPP</p>
+</footer>
+
+</body>
+</html>
